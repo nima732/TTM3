@@ -6,6 +6,8 @@
     type="system" 
     >
     <required>
+        <block name="c0" uuid="_A-etcBa2EeKcI53_cLibRA"/>
+        <block name="c1" uuid="_wscM4Ra2EeKcI53_cLibRA"/>
         <block name="c2" uuid="_64V-cQA0EeKykqq-JXy_5Q"/>
         <block name="c3" uuid="_V9smsQArEeKykqq-JXy_5Q"/>
     </required>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arctis="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:graphics="http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/arctis/_WFTqUHjGEdyxtoUMycQn9Q/10 pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q http:///schemas/graphics/_gd9EwIuAEdytfOWtpACIqw/6 pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_geG1wIuAEdytfOWtpACIqw">
+  <uml:Package xmi:id="_wsa-wBa2EeKcI53_cLibRA" name="no.ntnu.item.ttm3.hns">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_wscM4Ra2EeKcI53_cLibRA" name="DetectionSensor" classifierBehavior="_wsf3QBa2EeKcI53_cLibRA" partition="_wscz8Ba2EeKcI53_cLibRA">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_wsf3QBa2EeKcI53_cLibRA" name="DetectionSensor">
+        <region xmi:id="_wshFYBa2EeKcI53_cLibRA" name="&lt;region>">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_wshFYRa2EeKcI53_cLibRA" name="&lt;initial>"/>
+        </region>
+      </ownedBehavior>
+      <ownedParameter xmi:id="_yr140Ba2EeKcI53_cLibRA" name="start"/>
+      <ownedParameter xmi:id="_zlk9MBa2EeKcI53_cLibRA" name="stop" isStream="true"/>
+      <ownedParameter xmi:id="_1dXlQBa2EeKcI53_cLibRA" name="stopped" direction="out"/>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_yr0qsBa2EeKcI53_cLibRA" name="start" inPartition="_wscz8Ba2EeKcI53_cLibRA" parameter="_yr140Ba2EeKcI53_cLibRA"/>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_zlkWIBa2EeKcI53_cLibRA" name="stop" inPartition="_wscz8Ba2EeKcI53_cLibRA" parameter="_zlk9MBa2EeKcI53_cLibRA"/>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_1dW-MBa2EeKcI53_cLibRA" name="stopped" inPartition="_wscz8Ba2EeKcI53_cLibRA" parameter="_1dXlQBa2EeKcI53_cLibRA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_wscz8Ba2EeKcI53_cLibRA" name="main" node="_yr0qsBa2EeKcI53_cLibRA _zlkWIBa2EeKcI53_cLibRA _1dW-MBa2EeKcI53_cLibRA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_wsbl0Ba2EeKcI53_cLibRA">
+      <eAnnotations xmi:id="_wscM4Ba2EeKcI53_cLibRA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_WFTqUXjGEdyxtoUMycQn9Q"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ARCTIS_PROFILES/arctis.profile.uml#_rE77YK4iEduZSuTiwKs5Lw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_wsdbABa2EeKcI53_cLibRA">
+      <eAnnotations xmi:id="_wsdbARa2EeKcI53_cLibRA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_geG1wIuAEdytfOWtpACIqw"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://RAMSES_GRAPHIC_PROFILES/no.ntnu.item.ramses.graphicprofile.uml#_UEANMUVlEduH9aQE_pc66w"/>
+    </profileApplication>
+  </uml:Package>
+  <graphics:Shape xmi:id="_wseCEBa2EeKcI53_cLibRA" x="180" y="55" width="613" height="54" base_Element="_wscM4Ra2EeKcI53_cLibRA"/>
+  <graphics:Shape xmi:id="_wsfQMBa2EeKcI53_cLibRA" x="180" y="108" width="613" height="415" base_Element="_wscz8Ba2EeKcI53_cLibRA"/>
+  <arctis:esm xmi:id="_wsgeUBa2EeKcI53_cLibRA" base_StateMachine="_wsf3QBa2EeKcI53_cLibRA"/>
+  <graphics:Shape xmi:id="_z-yucBa2EeKcI53_cLibRA" x="126" y="342" base_Element="_zlkWIBa2EeKcI53_cLibRA" orientation="west"/>
+  <graphics:Shape xmi:id="_13FFwBa2EeKcI53_cLibRA" x="450" y="522" base_Element="_1dW-MBa2EeKcI53_cLibRA"/>
+  <graphics:Shape xmi:id="_4UCQYBa2EeKcI53_cLibRA" x="126" y="216" base_Element="_yr0qsBa2EeKcI53_cLibRA" orientation="west"/>
+</xmi:XMI>

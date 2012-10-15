@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="LightingApp" 
+    uuid="_A-etcBa2EeKcI53_cLibRA" 
+    status="under construction" 
+    type="block" 
+    >
+    <required>
+        <block name="c0" uuid="_mJlSIRa2EeKcI53_cLibRA"/>
+    </required>
+</block>
