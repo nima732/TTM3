@@ -16,7 +16,7 @@ public class Seeker extends Block {
 	}
 
 	public void notfound() {
-		log("Could not find speech service.");
+		log("Could not find any components");
 	}
 
 }

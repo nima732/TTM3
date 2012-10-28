@@ -117,6 +117,11 @@
         <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_cO6YwRa2EeKcI53_cLibRA" name="LightingApp">
           <region xmi:id="_cO6_0Ra2EeKcI53_cLibRA" name="&lt;region>">
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_cO6_0ha2EeKcI53_cLibRA" name="&lt;initial>"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_qlT6gCESEeKaA8m0RpWbqw" name="&lt;final>"/>
+            <subvertex xmi:type="uml:State" xmi:id="_trJrQCEsEeKaA8m0RpWbqw" name="active"/>
+            <transition xmi:id="_trKSUCEsEeKaA8m0RpWbqw" name="start / " source="_cO6_0ha2EeKcI53_cLibRA" target="_trJrQCEsEeKaA8m0RpWbqw"/>
+            <transition xmi:id="_06-5kCEtEeKaA8m0RpWbqw" name="stop / stopped" source="_trJrQCEsEeKaA8m0RpWbqw" target="_qlT6gCESEeKaA8m0RpWbqw"/>
+            <transition xmi:id="_E248oCEuEeKaA8m0RpWbqw" name="stop / " source="_trJrQCEsEeKaA8m0RpWbqw" target="_trJrQCEsEeKaA8m0RpWbqw"/>
           </region>
         </ownedBehavior>
         <ownedParameter xmi:id="_cO5Koha2EeKcI53_cLibRA" name="start"/>
@@ -139,6 +144,11 @@
         <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_8HwZoha2EeKcI53_cLibRA" name="DetectionSensor">
           <region xmi:id="_8HxnwRa2EeKcI53_cLibRA" name="&lt;region>">
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_8Hxnwha2EeKcI53_cLibRA" name="&lt;initial>"/>
+            <subvertex xmi:type="uml:State" xmi:id="_IaNtsCETEeKaA8m0RpWbqw" name="active"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_IaOUwCETEeKaA8m0RpWbqw" name="&lt;final>"/>
+            <transition xmi:id="_IaOUwSETEeKaA8m0RpWbqw" name="start / " source="_8Hxnwha2EeKcI53_cLibRA" target="_IaNtsCETEeKaA8m0RpWbqw"/>
+            <transition xmi:id="_IaQJ8CETEeKaA8m0RpWbqw" name="stop / stopped" source="_IaNtsCETEeKaA8m0RpWbqw" target="_IaOUwCETEeKaA8m0RpWbqw"/>
+            <transition xmi:id="_N4AX0CEuEeKaA8m0RpWbqw" name="stop / " source="_IaNtsCETEeKaA8m0RpWbqw" target="_IaNtsCETEeKaA8m0RpWbqw"/>
           </region>
         </ownedBehavior>
         <ownedParameter xmi:id="_8HvLgha2EeKcI53_cLibRA" name="start"/>
@@ -205,4 +215,10 @@
   <graphics:Shape xmi:id="_8HtWUBa2EeKcI53_cLibRA" x="126" y="126" width="181" height="73" base_Element="_8HgiABa2EeKcI53_cLibRA"/>
   <arctis:esm xmi:id="_8HxnwBa2EeKcI53_cLibRA" base_StateMachine="_8HwZoha2EeKcI53_cLibRA"/>
   <graphics:Shape xmi:id="__8gdoBa2EeKcI53_cLibRA" x="153" y="99" base_Element="__8daUBa2EeKcI53_cLibRA" orientation="south"/>
+  <arctis:event xmi:id="_IaO70CETEeKaA8m0RpWbqw" base_Transition="_IaOUwSETEeKaA8m0RpWbqw" triggers="_8HvLgRa2EeKcI53_cLibRA"/>
+  <arctis:event xmi:id="_IaQJ8SETEeKaA8m0RpWbqw" base_Transition="_IaQJ8CETEeKaA8m0RpWbqw" triggers="_8HvykBa2EeKcI53_cLibRA" effects="_8HwZoBa2EeKcI53_cLibRA"/>
+  <arctis:event xmi:id="_trKSUSEsEeKaA8m0RpWbqw" base_Transition="_trKSUCEsEeKaA8m0RpWbqw" triggers="_cO5KoRa2EeKcI53_cLibRA"/>
+  <arctis:event xmi:id="_06_goCEtEeKaA8m0RpWbqw" base_Transition="_06-5kCEtEeKaA8m0RpWbqw" triggers="_cO5xsBa2EeKcI53_cLibRA" effects="_cO5xsha2EeKcI53_cLibRA"/>
+  <arctis:event xmi:id="_E25jsCEuEeKaA8m0RpWbqw" base_Transition="_E248oCEuEeKaA8m0RpWbqw" triggers="_cO5xsBa2EeKcI53_cLibRA"/>
+  <arctis:event xmi:id="_N4AX0SEuEeKaA8m0RpWbqw" base_Transition="_N4AX0CEuEeKaA8m0RpWbqw" triggers="_8HvykBa2EeKcI53_cLibRA"/>
 </xmi:XMI>

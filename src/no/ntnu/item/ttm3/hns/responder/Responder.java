@@ -14,6 +14,7 @@ public class Responder extends Block {
 	
 	
 	public RegisterEntry createRegisterEntry() {
+		System.out.println("CREATEING REGISTERENTRY");
 		Address serviceAddress = ((Address)getProperty("local-address")).getCopy();
 		serviceAddress.setSessionID(serviceSessionID);
 		RegisterEntry entry = new RegisterEntry(serviceAddress, service);

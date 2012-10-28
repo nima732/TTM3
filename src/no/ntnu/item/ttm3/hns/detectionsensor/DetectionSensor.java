@@ -4,4 +4,7 @@ import no.ntnu.item.arctis.runtime.Block;
 
 public class DetectionSensor extends Block {
 
+	public String createServiceName() {
+		return "detectionSensor";
+	}
 }

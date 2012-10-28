@@ -19,11 +19,13 @@ import javax.swing.ListModel;
 import javax.swing.SwingConstants;
 
 import no.ntnu.item.arctis.runtime.Block;
+import no.ntnu.item.ttm3.hns.Address;
 import no.ntnu.item.ttm3.hns.button.Button;
 
 public class LightingGUI extends Block {
 
-	public void createView() {
+	public void createView(Address address) {
+		System.out.println(address);
 		JFrame frame = new JFrame("Lightingapp");
 		BoxLayout buttonLayout;
 		GridLayout roomLayout = new GridLayout(3,3);
@@ -66,8 +68,6 @@ public class LightingGUI extends Block {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.pack();
 		frame.setVisible(true);
-		
-		
 	}
 
 }
