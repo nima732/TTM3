@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block
+    name="Registry" 
+    uuid="_64V-cQA0EeKykqq-JXy_5Q" 
+    status="under construction" 
+    type="block" 
+    >
+    <required>
+        <block name="c0" uuid="_RLeIoQA9EeK5TMaEIsYJfA"/>
+    </required>
+</block>
