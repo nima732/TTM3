@@ -7,4 +7,8 @@ public class DetectionSensor extends Block {
 	public String createServiceName() {
 		return "detectionSensor";
 	}
+
+	public void systemOut() {
+		System.out.println("REGISTERED HARDCORE");
+	}
 }

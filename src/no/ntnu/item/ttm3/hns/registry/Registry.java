@@ -111,6 +111,7 @@ public class Registry extends Block {
 	}
 
 	public String getRegistrySessionID() {
+		System.out.println("GETTING REGISTRY SESSION ID");
 		return "registry";
 	}
 	

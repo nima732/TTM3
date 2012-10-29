@@ -6,6 +6,7 @@ import no.ntnu.item.ttm3.hns.Address;
 public class Component extends Block {
 
 	public void setRegistryAddress() {
+		System.out.println("Setting register address");
 		Address registry = new Address();
 		registry.setPort("52000");
 		registry.setIP("localhost");
@@ -14,6 +15,7 @@ public class Component extends Block {
 	}
 	
 	public Address getLocalAddress() {
+	System.out.println("Setting local address");
 	Address local = new Address();
 		local.setPort("52000");
 		local.setIP("localhost");
