@@ -12,7 +12,7 @@ public class LookupService extends Block {
 	public no.ntnu.item.ttm3.hns.Message message;
 	public no.ntnu.item.ttm3.hns.Message createLookupMessage() {
 		Message register = new Message("lookup");
-		register.setPayload("speech");
+		register.setPayload("detectionSensor");
 		return register;
 	}
 
