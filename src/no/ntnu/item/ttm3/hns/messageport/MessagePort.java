@@ -13,6 +13,7 @@ public class MessagePort extends Block {
 	public java.lang.String portSessionID;
 
 	public void send(Message message) {
+		System.out.println("SEND METHOD IN MESSAGE PORT");
 		assert message.getReceiver()!=null;
 		Address local = ((Address)getProperty("local-address")).getCopy();
 		local.setSessionID(portSessionID);
@@ -31,6 +32,11 @@ public class MessagePort extends Block {
 
 	public void unsubscribe() {
 		Router.deregister(portSessionID);
+	}
+
+	public Message test(Message message) {
+		System.out.println("WTF INSIDE THE MESSAGEPORT");
+		return message;
 	}
 
 }

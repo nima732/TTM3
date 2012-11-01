@@ -23,23 +23,21 @@ public class DetectionPanel extends Block {
 		button.setText("Detected");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				sendToBlock("PUSHED" + "_" + blockID);
+				sendToBlock("DETECTED" + "_" + blockID);
 			}
 		});
 		
 		JButton button2 = new JButton();
-		button.setText("Something");
-		button.addActionListener(new ActionListener() {
+		button2.setText("Register");
+		button2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				sendToBlock("PUSHED" + "_" + blockID);
+				sendToBlock("TEST" + "_" + blockID);
 			}
 		});
 	
 		frame.getContentPane().setLayout(new BorderLayout());
-		frame.getContentPane().add(button, BorderLayout.CENTER);
-		frame.getContentPane().add(button, BorderLayout.SOUTH);
-		frame.getContentPane().add(button2, BorderLayout.CENTER);
-		frame.getContentPane().add(button2, BorderLayout.SOUTH);
+		frame.getContentPane().add(button, BorderLayout.WEST);
+		frame.getContentPane().add(button2, BorderLayout.EAST);
 	
 		frame.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
@@ -55,11 +53,10 @@ public class DetectionPanel extends Block {
 	}
 	
 	public Message setDetectedMessage() {
-		return new Message("DETECTED");
-	}
-
-	public Message setTestMessage() {
-		return new Message("TEST");
+		System.out.println("SETTING DETECTED MESSAGE");
+		Message message = new Message("DETECTED");
+		message.setPayload("DETTE ER EN TEST");
+		return message;
 	}
 
 }

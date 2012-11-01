@@ -10,9 +10,11 @@ public class LookupService extends Block {
 	// Instance parameter. Edit only in overview page.
 	public final java.lang.String service;
 	public no.ntnu.item.ttm3.hns.Message message;
+	public java.lang.String component;
+	
 	public no.ntnu.item.ttm3.hns.Message createLookupMessage() {
 		Message register = new Message("lookup");
-		register.setPayload("speech");
+		register.setPayload(component);
 		return register;
 	}
 

@@ -1,5 +1,6 @@
 package no.ntnu.item.ttm3.hns.responder;
 
+import no.ntnu.item.ttm3.hns.Message;
 import no.ntnu.item.ttm3.hns.RegisterEntry;
 import no.ntnu.item.ttm3.hns.Address;
 import no.ntnu.item.arctis.runtime.Block;
@@ -33,6 +34,11 @@ public class Responder extends Block {
 	// Do not edit this constructor.
 	public Responder(java.lang.String service) {
 	    this.service = service;
+	}
+
+	public Message test(Message message) {
+		System.out.println("GOT INTO RESPONDER,SE THE PERSON NEXT TO ME");
+		return message;
 	}
 
 }
