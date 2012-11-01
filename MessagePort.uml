@@ -23,6 +23,7 @@
           <transition xmi:id="_RLeItAA9EeK5TMaEIsYJfA" name=" / receive; send" source="_RLeIpgA9EeK5TMaEIsYJfA" target="_RLeIpgA9EeK5TMaEIsYJfA"/>
           <transition xmi:id="_RLeItQA9EeK5TMaEIsYJfA" name=" / receive; stop; stopped" source="_RLeIpQA9EeK5TMaEIsYJfA" target="_RLeIqgA9EeK5TMaEIsYJfA"/>
           <transition xmi:id="_RLeItgA9EeK5TMaEIsYJfA" name=" / receive; stop; stopped" source="_RLeIpgA9EeK5TMaEIsYJfA" target="_RLeIqwA9EeK5TMaEIsYJfA"/>
+          <transition xmi:id="_aOiWwCQ7EeKCY-GEUJhRhg" name="send / " source="_RLeIpQA9EeK5TMaEIsYJfA" target="_RLeIpgA9EeK5TMaEIsYJfA"/>
         </region>
       </ownedBehavior>
       <ownedOperation xmi:id="_RLeItwA9EeK5TMaEIsYJfA" name="send"/>
@@ -136,4 +137,5 @@
   <arctis:location xmi:id="_RLeJCwA9EeK5TMaEIsYJfA" base_Variable="_RLeIxwA9EeK5TMaEIsYJfA" partition="_RLeI4wA9EeK5TMaEIsYJfA"/>
   <graphics:Shape xmi:id="_RLeJDAA9EeK5TMaEIsYJfA" x="414" y="108" base_Element="_RLeIxwA9EeK5TMaEIsYJfA"/>
   <graphics:Shape xmi:id="_Ter1oCNhEeKqLOYIdlycpQ" x="162" y="396" width="79" height="55" base_Element="_Teb-ACNhEeKqLOYIdlycpQ" orientation="east"/>
+  <arctis:event xmi:id="_aWoi0CQ7EeKCY-GEUJhRhg" base_Transition="_aOiWwCQ7EeKCY-GEUJhRhg" triggers="_RLeIywA9EeK5TMaEIsYJfA"/>
 </xmi:XMI>

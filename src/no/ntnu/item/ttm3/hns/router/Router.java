@@ -40,6 +40,7 @@ public class Router extends Block {
 	
 	public void receive(Message message) {
 		System.err.println("route message: " + message.getSignalID());
+		System.err.println("route message to: " + message.toString());
 		MessageListener listener = listeners.get(message.getReceiver().getSessionID());
 		if(listener!=null) {
 			listener.receive(message);

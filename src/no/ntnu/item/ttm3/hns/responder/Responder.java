@@ -37,7 +37,7 @@ public class Responder extends Block {
 	}
 
 	public Message test(Message message) {
-		System.out.println("GOT INTO RESPONDER,SE THE PERSON NEXT TO ME");
+		System.out.println("GOT INTO RESPONDER");
 		return message;
 	}
 

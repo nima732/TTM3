@@ -35,21 +35,32 @@ public class LightingGUI extends Block {
 	JLabel room1,room2,room3,room4,room5,room6,room7,room8,room9;
 	JList sensorList;
 	DefaultListModel<String> listModel  = new DefaultListModel<String>();
-
+	ArrayList<JLabel> rooms;
 
 	public void createView() {
-		
+		rooms = new ArrayList<JLabel>();
+		room1= new JLabel("room1");
+		room2= new JLabel("room2");
+		room3= new JLabel("room3");
+		room4= new JLabel("room4");
+		room5= new JLabel("room5");
+		room6= new JLabel("room6");
+		rooms.add(room1);
+		rooms.add(room2);
+		rooms.add(room3);
+		rooms.add(room4);
+		rooms.add(room5);
+		rooms.add(room6);
 		
 		JPanel roomPanel = new JPanel();
 		roomPanel.setLayout(roomLayout);
-		
-		for (int i = 1; i < 10; i++) {
-			JLabel room = new JLabel("room"+i);
+		for (int i = 1; i < 5; i++) {
+			JLabel room = rooms.get(i);
 			room.setMinimumSize(new Dimension(100, 100));
 			room.setBorder(BorderFactory.createLineBorder(Color.black));
 			roomPanel.add(room);
-			listModel.addElement("room"+i);
 		}
+		listModel.addElement("No components registerd");
 		
 		JPanel buttonPanel = new JPanel();
 		buttonPanel.setLayout(new BoxLayout(buttonPanel,BoxLayout.LINE_AXIS));
@@ -60,6 +71,7 @@ public class LightingGUI extends Block {
 		sensorList = new JList<String>(listModel);
 		sensorList.setVisibleRowCount(5);
 		JScrollPane scrollPane = new JScrollPane(sensorList);
+		scrollPane.setSize(50, 50);
 
 		buttonPanel.add(scrollPane);
 		buttonPanel.add(start);
@@ -85,7 +97,7 @@ public class LightingGUI extends Block {
 		frame.add(buttonPanel,BorderLayout.EAST);
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.pack();
+		frame.setSize(400, 400);
 		frame.setVisible(true);
 	}
 
@@ -94,6 +106,8 @@ public class LightingGUI extends Block {
 			listModel.removeAllElements();
 			for (String sessionID : components) {
 				listModel.addElement(sessionID);
+				room2.setOpaque(true);
+				room2.setBackground(Color.BLUE);
 			}
 		}
 		else{

@@ -23,7 +23,6 @@
           <transition xmi:id="_tJBcFABmEeKX5alAD3oNEA" name="send / " source="_tJBcCQBmEeKX5alAD3oNEA" target="_tJBcCQBmEeKX5alAD3oNEA"/>
           <transition xmi:id="_tJBcFQBmEeKX5alAD3oNEA" name=" / receive; send" source="_tJBcBQBmEeKX5alAD3oNEA" target="_tJBcBQBmEeKX5alAD3oNEA"/>
           <transition xmi:id="_tJBcFgBmEeKX5alAD3oNEA" name="" source="_tJBcBwBmEeKX5alAD3oNEA" target="_tJBcCgBmEeKX5alAD3oNEA"/>
-          <transition xmi:id="_Ef4aYCNpEeKqLOYIdlycpQ" name="send / " source="_tJBcBwBmEeKX5alAD3oNEA" target="_tJBcBQBmEeKX5alAD3oNEA"/>
         </region>
       </ownedBehavior>
       <ownedOperation xmi:id="_tJBcFwBmEeKX5alAD3oNEA" name="createServiceSessionID"/>
@@ -122,6 +121,7 @@
             <transition xmi:id="_MFDPUQBnEeKX5alAD3oNEA" name=" / receive; send" source="_ME6FZwBnEeKX5alAD3oNEA" target="_ME6FZwBnEeKX5alAD3oNEA"/>
             <transition xmi:id="_MFDPUwBnEeKX5alAD3oNEA" name=" / receive; stop; stopped" source="_ME6FZgBnEeKX5alAD3oNEA" target="_ME6FaABnEeKX5alAD3oNEA"/>
             <transition xmi:id="_MFGSoABnEeKX5alAD3oNEA" name=" / receive; stop; stopped" source="_ME6FZwBnEeKX5alAD3oNEA" target="_ME6FaABnEeKX5alAD3oNEA"/>
+            <transition xmi:id="_gDILkCQ7EeKCY-GEUJhRhg" name="send / " source="_ME6FZgBnEeKX5alAD3oNEA" target="_ME6FZwBnEeKX5alAD3oNEA"/>
           </region>
         </ownedBehavior>
         <ownedParameter xmi:id="_MEz-xABnEeKX5alAD3oNEA" name="listen" type="_tJBcTgBmEeKX5alAD3oNEA"/>
@@ -255,5 +255,5 @@
   <arctis:event xmi:id="__BwtRwBoEeKX5alAD3oNEA" base_Transition="__BwtRgBoEeKX5alAD3oNEA"/>
   <graphics:Shape xmi:id="_L03zYABpEeKX5alAD3oNEA" aux1="56 0 -108 36  56 -36 -108 0 " base_Element="_DyppYABpEeKX5alAD3oNEA"/>
   <graphics:Shape xmi:id="_vI2FACNgEeKqLOYIdlycpQ" x="900" y="396" width="60" height="55" base_Element="_vIlmUCNgEeKqLOYIdlycpQ" orientation="west"/>
-  <arctis:event xmi:id="_Ef8r0CNpEeKqLOYIdlycpQ" base_Transition="_Ef4aYCNpEeKqLOYIdlycpQ" triggers="_tJBcNABmEeKX5alAD3oNEA"/>
+  <arctis:event xmi:id="_gDIyoCQ7EeKCY-GEUJhRhg" base_Transition="_gDILkCQ7EeKCY-GEUJhRhg" triggers="_ME3CEgBnEeKX5alAD3oNEA"/>
 </xmi:XMI>
