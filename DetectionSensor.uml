@@ -179,7 +179,7 @@
   <graphics:Shape xmi:id="_wseCEBa2EeKcI53_cLibRA" x="198" y="54" width="613" height="55" base_Element="_wscM4Ra2EeKcI53_cLibRA"/>
   <graphics:Shape xmi:id="_wsfQMBa2EeKcI53_cLibRA" x="198" y="54" width="613" height="451" base_Element="_wscz8Ba2EeKcI53_cLibRA"/>
   <arctis:esm xmi:id="_wsgeUBa2EeKcI53_cLibRA" base_StateMachine="_wsf3QBa2EeKcI53_cLibRA"/>
-  <graphics:Shape xmi:id="_z-yucBa2EeKcI53_cLibRA" x="126" y="342" base_Element="_zlkWIBa2EeKcI53_cLibRA" orientation="west"/>
+  <graphics:Shape xmi:id="_z-yucBa2EeKcI53_cLibRA" x="144" y="306" base_Element="_zlkWIBa2EeKcI53_cLibRA" orientation="west"/>
   <graphics:Shape xmi:id="_13FFwBa2EeKcI53_cLibRA" x="450" y="504" base_Element="_1dW-MBa2EeKcI53_cLibRA"/>
   <graphics:Shape xmi:id="_4UCQYBa2EeKcI53_cLibRA" x="126" y="144" base_Element="_yr0qsBa2EeKcI53_cLibRA" orientation="west"/>
   <arctis:event xmi:id="_ETeh0CETEeKaA8m0RpWbqw" base_Transition="_ETaQYCETEeKaA8m0RpWbqw" triggers="_yr0qsBa2EeKcI53_cLibRA"/>
